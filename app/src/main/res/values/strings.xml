@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BestApp</string>
+    <string name="btn1">Change view</string>
+    <string name="btn2">Click button one</string>
+    <string name="hw">Hello World</string>
+    <string name="bye_world">bye</string>
+</resources>
