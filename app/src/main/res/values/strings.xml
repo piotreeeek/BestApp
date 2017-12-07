@@ -3,5 +3,10 @@
     <string name="btn1">Change view</string>
     <string name="btn2">Click button one</string>
     <string name="hw">Hello World</string>
-    <string name="bye_world">bye</string>
+    <string name="bye_world">Bye</string>
+    <string name="fa_text">Text</string>
+    <string name="fa_send_text">First activity</string>
+    <string name="send">Send</string>
+    <string name="input_label">Enter text to show: </string>
+    <string name="error">No data come</string>
 </resources>
