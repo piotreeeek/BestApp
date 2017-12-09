@@ -9,4 +9,5 @@
     <string name="send">Send</string>
     <string name="input_label">Enter text to show: </string>
     <string name="error">No data come</string>
+    <string name="input_error">Enter text</string>
 </resources>
