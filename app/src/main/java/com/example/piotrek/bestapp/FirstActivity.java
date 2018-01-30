@@ -8,21 +8,16 @@ import android.widget.TextView;
 
 public class FirstActivity extends AppCompatActivity {
 
-    GridLayout layout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
-        layout = findViewById(R.id.first_layout);
+        GridLayout layout = findViewById(R.id.first_layout);
         Bundle bundle = getIntent().getExtras();
 
         TextView textView = findViewById(R.id.fa_text_v);
-        try {
-            textView.setText((CharSequence) bundle.get("text"));
-        }
-        catch (NullPointerException e){
-            textView.setText(R.string.error);
-        }
+        textView.setText((CharSequence) (bundle != null ? bundle.get(MainActivity.TEXT_VARIABLE_NAME)
+                : getString(R.string.error)));
 
         ImageView imageView = new ImageView(this);
         imageView.setImageResource(R.drawable.kot);

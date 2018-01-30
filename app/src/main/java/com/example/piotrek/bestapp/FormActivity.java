@@ -20,7 +20,7 @@ public class FormActivity extends AppCompatActivity {
         String input = editText.getText().toString();
         if(input.length() > 0) {
             Intent intent = new Intent();
-            intent.putExtra("result", input);
+            intent.putExtra(MainActivity.RESULT_VARIABLE_NAME, input);
             setResult(RESULT_OK, intent);
             finish();
         }else{
